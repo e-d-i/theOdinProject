@@ -1,0 +1,246 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 13px;
+}
+
+body {
+  font-family: Arial, "Times New Roman", Verdana, Tahoma, sans-serif;
+  background-color: #FFF;
+  color: #000;
+  line-height: 1.5;
+  height: 100%;
+}
+
+#navbar {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navFloatLeft, .navFloatRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+li {
+  padding: 0 13px;
+}
+
+li:link, li:visited, li:hover, li:active {
+  color: #000;
+  text-decoration: underline;
+}
+
+ul > li {
+  list-style: none;
+}
+
+ul > li a {
+  color: #000;
+  text-decoration: none;
+}
+
+ .material-icons {
+  padding-top: 6px;
+}
+
+.material-icons > a {
+  opacity: .55;
+}
+
+.material-icons > a:hover {
+  opacity: 1;
+}
+
+.signInBtn {
+  background-color:#4285F4;
+  border: 1px solid #4285F4;
+  border-radius: 4px;
+  font-weight: bold;
+  line-height: 28px;
+  padding: 0 12px;
+}
+
+.signInBtn:hover {
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+a > .signInBtn {
+  color: #FFF;
+  cursor: default;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main > .gLogo {
+  display: block;
+  margin: 0 auto;
+  margin-top: 105px;
+}
+
+.search {
+  position: relative;
+  width: 580px;
+  margin: 0 auto;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.search > .searchInput {
+  display: block;
+  width: 100%;
+  border: 1px solid #DFE1E5;
+  border-radius: 24px;
+  font-size: 16px;
+  padding: 13px 45px;
+  outline: none;
+}
+
+.search > .searchInput:hover,
+.search > .searchInput:focus {
+  -webkit-box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+          box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+  border-color: rgba(223,225,229,0);
+}
+
+.search > .magGlass {
+  position: absolute;
+  width: 20px;
+  opacity: .55;
+  top: 14px;
+  left: 14px;
+}
+
+.search .gMic {
+  position: absolute;
+  width: 24px;
+  top: 12px;
+  right: 14px;
+}
+
+.searchBtn {
+  display: inline-block;
+  color: #5F6368;
+  border: 1px solid #F2F2F2;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+  padding: 10px 15px;
+  font-size: 14px;
+  margin-right: 10px;
+  margin-top: 30px;
+  outline: none;
+  cursor: pointer;
+}
+
+.searchBtn:hover {
+  border: 1px solid #A6A6A6;
+  color: #000;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #F2F2F2;
+}
+
+footer a {
+  display: inline-block;
+  color: #5F6368;
+  padding: 12px 13px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.fLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #DCDCDC;
+}
+
+.fLinks-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media (max-width: 630px) {
+  .search {
+    width: 95vw;
+  }
+}
+
+@media (max-width: 547px) {
+  .fLinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  li {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 392px) {
+  .gLogo {
+    width: 70vw;
+  }
+  li {
+    padding: 0 8px;
+  }
+}
+
+@media (max-width: 387px) {
+  li {
+    padding: 0 6px;
+  }
+  .fLinks {
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  li {
+    padding: 0 5px;
+  }
+  .signInBtn {
+    font-size: 11px;
+  }
+  .searchBtn {
+    font-size: 12px;
+  }
+}
