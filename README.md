@@ -1,4 +1,4 @@
-# theOdinProject-1
+# theOdinProject-googleHomepage
 
 Recreating the Google.com homepage with HTML & CSS
 
